@@ -1,12 +1,6 @@
 import { FC, useState } from 'react';
 import BooksList from './components/BooksList/BooksList';
-
-interface Book {
-  id: string;
-  title: string;
-  author: string;
-  price: number;
-};
+import { Book } from './interfaces/Book.interface';
 
 const booksData: Book[] = [
   { id: 'te1314derw', title: 'Of Mice and Men', author: 'John Steinbeck', price: 25 },
