@@ -1,5 +1,6 @@
 import { FC } from "react";
 import { Book } from "../../interfaces/Book.interface";
+import "./BooksItem.css";
 
 type Props = {
   book: Book;
@@ -7,7 +8,9 @@ type Props = {
 
 const BookItem: FC<Props> = ({ book }) => {
   return(
-    <li>{book.title} by {book.author}, ${book.price}</li>
+    <li className="book-item">
+      {book.title} by {book.author}, ${book.price}
+    </li>
   );
 };
 
