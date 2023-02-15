@@ -1,4 +1,5 @@
 import { FC, useState } from 'react';
+import BooksList from './components/BooksList/BooksList';
 
 interface Book {
   id: string;
@@ -21,7 +22,7 @@ const App: FC = () => {
       <header>
         <h1>Books App</h1>
       </header>
-      {books.map((book: Book) => <span>{book.title}</span>)}
+      <BooksList books={books} />
     </div>
   );
 };
