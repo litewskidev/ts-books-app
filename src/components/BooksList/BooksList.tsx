@@ -1,7 +1,11 @@
 import { FC } from "react";
 import { Book } from "../../interfaces/Book.interface";
 
-const BooksList: FC<{ books: Book[] }> = ({ books }) => {
+type Props = {
+  books: Book[];
+};
+
+const BooksList: FC<Props> = ({ books }) => {
   return(
     <ul></ul>
   );
