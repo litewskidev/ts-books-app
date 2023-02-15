@@ -1,5 +1,6 @@
 import { FC } from "react";
 import { Book } from "../../interfaces/Book.interface";
+import BookItem from "../BookItem/BookItem";
 
 type Props = {
   books: Book[];
@@ -7,7 +8,9 @@ type Props = {
 
 const BooksList: FC<Props> = ({ books }) => {
   return(
-    <ul></ul>
+    <ul>
+      {books.map((book: Book) => <BookItem key={book.id} book={book} />)}
+    </ul>
   );
 };
 
