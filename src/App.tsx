@@ -14,13 +14,17 @@ const App: FC = () => {
 
   const [books, setBooks] = useState<Book[]>(booksData);
 
+  const addBook = (book: Book): void => {
+    setBooks([...books, book])
+  };
+
   return(
     <div className="container">
       <header>
         <h1>Books App</h1>
       </header>
       <BooksList books={books} />
-      <AddBookForm />
+      <AddBookForm addBook={addBook} />
     </div>
   );
 };
