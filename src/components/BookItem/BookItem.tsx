@@ -12,7 +12,7 @@ const BookItem: FC<Props> = ({ book, removeBook, bookId }) => {
   return(
     <li className="book-item">
       {book.title} by {book.author}, ${book.price}
-      <button className="remove-book" onClick={() => removeBook(bookId)}>Remove Book</button>
+      <button className="remove-book" onClick={() => removeBook(bookId)}>Remove</button>
     </li>
   );
 };

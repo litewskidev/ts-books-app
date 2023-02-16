@@ -37,7 +37,7 @@ const AddBookForm: FC<Props> = ({ addBook }) => {
       Title: <input value={title} onChange={e => setTitle(e.target.value)} type="text" />
       Author: <input value={author} onChange={e => setAuthor(e.target.value)} type="text" />
       Price: <input value={price} onChange={e => setPrice(parseInt(e.target.value))} type="number" />
-      <button>Add book</button>
+      <button>Add Book</button>
     </form>
   );
 };
