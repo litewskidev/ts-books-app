@@ -3,7 +3,7 @@ import booksReducer from './booksRedux';
 
 const store = configureStore({
   reducer: {
-    books: booksReducer,
+    books: booksReducer
   }
 });
 
